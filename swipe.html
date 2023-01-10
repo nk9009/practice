@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main_banner">
+        <ul class="main_slide_wrap">
+            <li>
+                <div class="main_tit">
+                    <h1>Welcome to Midwest University1</h1>
+                    <p>Midwest University is committed to providing students with<br>
+                        outstanding learning opportunities in an environment of rigorous academic work,<br>
+                        which prepares them for success in their chosen fields of study.</p>
+                    <button class="introBt" onclick="location.href='./pages/intro.html'">학과소개</button>
+                </div>
+            </li>
+            <li>
+                <div class="main_tit">
+                    <h1>Welcome to Midwest University2</h1>
+                    <p>Midwest University is committed to providing students with<br>
+                        outstanding learning opportunities in an environment of rigorous academic work,<br>
+                        which prepares them for success in their chosen fields of study.</p>
+                    <button class="introBt" onclick="location.href='./pages/intro.html'">학과소개</button>
+                </div>
+            </li>
+            <li>
+                <div class="main_tit">
+                    <h1>Welcome to Midwest University3</h1>
+                    <p>Midwest University is committed to providing students with<br>
+                        outstanding learning opportunities in an environment of rigorous academic work,<br>
+                        which prepares them for success in their chosen fields of study.</p>
+                    <button class="introBt" onclick="location.href='./pages/intro.html'">학과소개</button>
+                </div>
+            </li>
+        </ul>
+    
+        <div class="slide_bt_wrap">
+            <div class="bt1 active"></div>
+            <div class="bt2"></div>
+            <div class="bt3"></div>
+        </div>
+    
+        <div class="arrow-map" >
+            <!-- 2023-01-10 ryk 수정 - arrow-next 원본 transform: translateY(350%) -->
+            <div class="arrow-prev" style="width: 99%; border-style: hidden; position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer" onclick="switchPrev()"></div>
+            <div class="arrow-next" style="border-style: hidden; float: right; absolute; top: 50%; transform: translateY(383%); cursor: pointer" onclick="switchNext()"></div>
+        </div>
+    </section>
+</body>
+</html>
+
+
