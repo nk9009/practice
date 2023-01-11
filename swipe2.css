@@ -1,16 +1,143 @@
-html, body{ margin: 0; }
-h1{ text-align: center; }
-.album{
-  height: 300px;
-  width: 375px;
+/* 홈  화면*/
+.main .main_banner {
+  width: 100%;
+  height: 475px;
+  position: relative;
   overflow: hidden;
 }
-.images{
-  position: relative;
+
+.main .main_banner .main_slide_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300%;
+  height: 100%;
   display: flex;
-  height: 300px;
-  transition: transform 0.5s;
 }
-img{
-  width: 375px;
+
+.main .main_banner .main_slide_wrap li {
+  width: 33.3333%;
+  height: 100%;
 }
+
+.main .main_banner .main_slide_wrap li:nth-child(1) {
+  background: url(company_pic02.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main .main_banner .main_slide_wrap li:nth-child(2) {
+  background: url(company_pic03.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main .main_banner .main_slide_wrap li:nth-child(3) {
+  background: url(company_pic04.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main .main_banner .main_tit {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.main .main_banner .main_tit h1 {
+  font-size: 36px;
+  font-family: 'NanumSquare', sans-serif;
+  color: #ffffff;
+  font-weight: 900;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.212);
+  opacity: 0;
+  animation: mymove 0.8s;
+  -webkit-animation: mymove 0.8s;
+  animation-fill-mode: forwards;
+}
+
+
+.main .main_banner .main_tit p {
+  font-size: 17px;
+  font-family: 'NanumSquare', sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.212);
+  margin-top: 20px;
+  line-height: 24px;
+  opacity: 0;
+  animation: mymove 0.8s;
+  -webkit-animation: mymove 0.8s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.main .main_banner .main_tit button {
+  width: 120px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 30px;
+  font-size: 17px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #065FA5;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  opacity: 0;
+  animation: mymove 0.8s;
+  -webkit-animation: mymove 0.8s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.main .main_banner .main_tit button:hover {
+  box-shadow: -120px 0 0 0 #114d7e inset;
+  color: #ffffff;
+}
+
+.main .main_banner .slide_bt_wrap {
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .main_banner .slide_bt_wrap div {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main .main_banner .slide_bt_wrap div.active {
+  background-color: #112D43;
+}
+
+@media screen and (max-width: 500px) {
+
+  .main .main_banner .slide_bt_wrap {
+      width: 50px;
+  }
+
+  .main .main_banner .slide_bt_wrap div {
+      width: 10px;
+      height: 10px;
+  }
+
+}
+
+/* 배너끝 */

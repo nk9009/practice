@@ -7,19 +7,70 @@
   <link href="swipe2.css" rel="stylesheet">
   <script src="swipe2.js" defer></script>
   <title>Slider for mobile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <h1>SWIPE!</h1>
-  <div class="album">
-    <div class="images">
-      <img src="company_pic02.jpg">
-      <img src="company_pic03.jpg">
-      <img src="company_pic04.jpg">
-      <img src="company_pic05.jpg">
+  <section class="main_banner">
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper main_slide_wrap">
+            <!-- Slides -->
+            <li class="swiper-slide">
+                <div class="main_tit">
+                    <h1>Welcome to Midwest University1</h1>
+                    <p>Midwest University is committed to providing students with<br>
+                        outstanding learning opportunities in an environment of rigorous academic work,<br>
+                        which prepares them for success in their chosen fields of study.</p>
+                    <button class="introBt" onclick="location.href='./pages/intro.html'">학과소개</button>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <div class="main_tit">
+                    <h1>Welcome to Midwest University2</h1>
+                    <p>Midwest University is committed to providing students with<br>
+                        outstanding learning opportunities in an environment of rigorous academic work,<br>
+                        which prepares them for success in their chosen fields of study.</p>
+                    <button class="introBt" onclick="location.href='./pages/intro.html'">학과소개</button>
+                </div>
+            </li>
+            <li class="swiper-slide">						
+                <div class="main_tit">
+                    <h1>Welcome to Midwest University3</h1>
+                    <p>Midwest University is committed to providing students with<br>
+                        outstanding learning opportunities in an environment of rigorous academic work,<br>
+                        which prepares them for success in their chosen fields of study.</p>
+                    <button class="introBt" onclick="location.href='./pages/intro.html'">학과소개</button>
     </div>
-  </div>
+            </li>
+        </ul>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+  </section>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
 
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable : true,  // 버튼 클릭 여부
+        },
+        autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
+          delay : 2000,   // 시간 설정
+          disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+        },
+
+    });
+  </script>
   
 </body>
 </html>

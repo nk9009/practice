@@ -3,8 +3,6 @@ if(matchMedia("screen and (max-width: 1366px)").matches){
                 let curPos = 0; // 현재 위치
                 let position = 0;
                 let start_x, end_x;
-                // const IMAGE_WIDTH = 375;
-                // const images = document.querySelector(".images")
                 const slideWrap = document.querySelector(".main .main_banner .main_slide_wrap");
                 const slide = document.querySelector(".main_tit");
                 let slide_WIDTH = slide.outerWidth(true); // outerWidth는 margin, padding, border 포함된 width 값을 가져옴
