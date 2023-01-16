@@ -2,20 +2,32 @@
     margin: 0;
     padding: 0;
     border: 1px solid pink;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 a {
     text-decoration: none; 
     color: #000;
     list-style: none;
 }
-header {
-}
 
+
+/* ----------- header ---------- */
 
 .con {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    height: 130px;
+    align-items: center;
+    background: lightblue;
+    top: 0;
+
+}
+
+.logo_con{
+    margin-right: 130px;
 }
 
 .logo_img {
@@ -33,6 +45,7 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
+    margin-right: 30px;
 }
 
 .info_con .info a,
@@ -48,6 +61,12 @@ header {
 .info_con .info a:last-child,
 .info_con .info li:last-child {
     margin-right: 0;
+}
+
+.info_con .info_search_li {
+    border: 1px solid lightgray;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 .info_con .menu {
@@ -73,4 +92,12 @@ header {
     margin-right: 0;
 }
 
+
+/* main */
+main {
+    margin-top: 130px;
+}
+.section1_bg {
+    background: url(image/2023_newyear_top_bg.jpg);
+}
 
