@@ -21,7 +21,6 @@ a {
     position: fixed;
     height: 130px;
     align-items: center;
-    background: lightblue;
     top: 0;
 
 }
@@ -99,5 +98,52 @@ main {
 }
 .section1_bg {
     background: url(image/2023_newyear_top_bg.jpg);
+    background-size: contain;
+    height: calc(100vh - 190px);
 }
 
+.section1_bg .section1_column1 img {
+    position: absolute;
+    bottom: 39%;
+    left: 17%;
+    width: 250px;
+}
+
+.section1_bg .section1_column1 button {
+    position: absolute;
+    padding: 7px 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    left: 22%;
+    bottom: 28%;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.section1_bg .section1_column1 button:hover {
+    background: green;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.section1_column2 img:nth-child(1){
+    position: absolute;
+    width: 200px;
+    left: 40%;
+    bottom: 20%;
+}
+
+.section1_column2 img:nth-child(2){
+    width: 230px;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+}
+
+.section1_column2 img:nth-child(3){
+    width: 230px;
+    position: absolute;
+    left: 64%;
+    bottom: 27%;
+}
