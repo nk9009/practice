@@ -13,7 +13,9 @@ a {
 
 
 /* ----------- header ---------- */
-
+header {
+    
+}
 .con {
     width: 100%;
     display: flex;
@@ -22,7 +24,8 @@ a {
     height: 130px;
     align-items: center;
     top: 0;
-
+    z-index: 999;
+    background: #fff;
 }
 
 .logo_con{
@@ -83,7 +86,7 @@ a {
 .info_con .menu a:hover,
 .info_con .menu li:hover {
     text-decoration: underline;
-    color: green;
+    color: #1e3932;
 }
 
 .info_con .menu a:last-child,
@@ -112,7 +115,7 @@ main {
 .section1_bg .section1_column1 button {
     position: absolute;
     padding: 7px 10px;
-    border: 2px solid green;
+    border: 2px solid #1e3932;
     border-radius: 10px;
     left: 22%;
     bottom: 28%;
@@ -122,7 +125,7 @@ main {
 }
 
 .section1_bg .section1_column1 button:hover {
-    background: green;
+    background: #1e3932;
     text-decoration: underline;
     color: #fff;
 }
@@ -147,3 +150,79 @@ main {
     left: 64%;
     bottom: 27%;
 }
+
+.section2_notice_promotion {
+    display: flex;
+    height: 65px;
+
+}
+.section2_notice_promotion .notice {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    justify-content: center;
+    position: relative;
+}
+
+.section2_notice_promotion .notice span:nth-child(1) {
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.section2_notice_promotion .notice span:nth-child(2) {
+    font-size: 14px;
+} 
+
+.section2_notice_promotion .notice a,
+.section2_notice_promotion .notice img {
+    width: 35px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.section2_notice_promotion .promotion {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.section2_notice_promotion .promotion span {
+    margin-left: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 70px;
+}
+
+.section2_notice_promotion .promotion a,
+.section2_notice_promotion .promotion img {
+    width: 35px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.section2_reward {
+    width: 100%;
+    height: 180px;
+    background: #1e3932;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2_reward .reward_img img {
+    width: 140px;
+}
+
+.section2_reward .reward_text_con {
+}
+
+
+
+
