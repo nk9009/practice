@@ -220,9 +220,333 @@ main {
     width: 140px;
 }
 
-.section2_reward .reward_text_con {
+.section2_reward .reward_text_con .reward_text1 {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_texts {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_texts p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_texts p:nth-child(2),
+.section2_reward .reward_text_con .reward_text1 .reward_texts p:nth-child(3) {
+    font-size: 16px;
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_texts p:nth-child(2) span,
+.section2_reward .reward_text_con .reward_text1 .reward_texts p:nth-child(3) span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_buttons{
+    display: flex;
+    align-items: end;
+
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_buttons div{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_buttons .joinin {
+    margin-right: 10px;
+    background: green;
+
+}
+
+.section2_reward .reward_text_con .reward_text1 .reward_buttons .logoin {
+    border: 2px solid #fff;
+}
+
+.section2_reward .reward_text_con .reward_text2 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2_reward .reward_text_con .reward_text2 .reward_text2_texts {
+    font-size: 14px;
+}
+
+.section2_reward .reward_text_con .reward_text2 .reward_text2_texts span {
+    font-weight: bold;
+}
+
+.section2_reward .reward_text_con .reward_text2 .reward_text2_e-gift {
+
+}
+
+.section2_reward .reward_text_con .reward_text2 .reward_text2_e-gift span {
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.section3_elsalvador {
+    background: url(image/2023_newyear_promotion_bg.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.section3_elsalvador img {
+
+}
+
+.section3_elsalvador .elsalvador_text div h2 {
+    font-size: 36px;
+    color: #6c4f12;
+}
+
+.section3_elsalvador .elsalvador_text div p {
+    color: #835f14;
+    font-size: 16px;
+}
+
+.section3_elsalvador .elsalvador_text .elsalvador_more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 2px solid #6c4f12;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.section3_elsalvador .elsalvador_text .elsalvador_more:hover {
+    background: #6c4f12;
+    text-decoration: underline;
+    color: #fff;
 }
 
 
+.section4_ethiopia {
+    height: 350px;
+    background: url(image/2212201_pc_reserve_coffee_bg.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4_ethiopia .section4_ethiopia_con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4_ethiopia .section4_ethiopia_con .ethiopia_logo {
+    width: 500px;
+}
+
+.section4_ethiopia .section4_ethiopia_con .ethiopia_more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 2px solid #6c4f12;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.section4_ethiopia .section4_ethiopia_con .ethiopia_more:hover {
+    background: #6c4f12;
+    text-decoration: underline;
+    color: #fff;
+}
 
 
+.section5_pick {
+    background: url(image/2022_Chrismas2_PTF_bg.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.section5_pick .pick_texts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+    text-align: right;
+    flex: 3;
+}
+
+.section5_pick .pick_texts img {
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.section5_pick .pick_texts h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.section5_pick .pick_texts h2 span {
+    font-weight: bold;
+}
+
+.section5_pick .pick_texts p {
+    font-size: 14px;
+}
+
+.section5_pick .pick_texts p span {
+    font-weight: bold;
+}
+
+.section5_pick .pick_texts .pick_more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.section5_pick .pick_texts .pick_more:hover {
+    background: #fff;
+    text-decoration: underline;
+    color: #6c4f12;
+}
+
+
+.section6_magazine {
+    background: url(image/reserve_bg_pc.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 400px;
+}
+
+.section6_magazine .magazine_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section6_magazine .magazine_texts .magazine_more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    color: #000;
+}
+
+.section6_magazine .magazine_texts .magazine_more:hover {
+    background: #000;
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+.section7_store {
+    background: url(image/store_bg.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+}
+
+.section7_store .store_images {
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+.section7_store .store_images .store_image1 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.section7_store .store_images .store_image2 {
+    position: absolute;
+    bottom: 5%;
+    left: 65%;
+}
+
+.section7_store .store_texts {
+    flex: 1;
+}
+
+.section7_store .store_texts h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.section7_store .store_texts h3 {
+    margin-bottom: 15px;
+}
+
+.section7_store .store_texts h2 span {
+    font-weight: bold;
+}
+
+.section7_store .store_texts p {
+    font-size: 14px;
+}
+
+.section7_store .store_texts p span {
+    font-weight: bold;
+}
+
+.section7_store .store_texts .store_more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    color: #000;
+}
+
+.section7_store .store_texts .store_more:hover {
+    background: #000;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.section7_store .store_coffebean {
+    position: absolute;
+    top: 0;
+}
+
+.section7_store .store_store {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
