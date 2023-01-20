@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid pink;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -549,4 +548,125 @@ main {
     position: absolute;
     bottom: 0;
     right: 10%;
+}
+
+
+/* -------- footer ------- */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_col1 {
+    padding: 30px;
+    padding-bottom: 70px;
+    background: rgb(32, 30, 30);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_col1 div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7%;
+}
+
+.footer_col1 div:last-child {
+    margin-right: 0;
+}
+
+.footer_col1 div h5 {
+    margin-bottom: 10px;
+}
+
+.footer_col1 div span {
+    font-size: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.footer_col1 div span:hover {
+    text-decoration: underline;
+}
+
+.footer_col2 {
+    background:rgb(48, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.footer_col2 img {
+    cursor: pointer;
+}
+
+.footer_col3 {
+    background: rgb(32, 30, 30);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.footer_col3 span {
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer_col3 span:hover {
+    text-decoration: underline;
+}
+
+.footer_col3 .divider {
+    color: lightgray;
+}
+
+.footer_col4 {
+    padding: 10px;
+    padding-bottom: 20px;
+    background: rgb(32, 30, 30);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer_col4 span {
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+}
+
+.footer_col4 span:hover {
+    text-decoration: underline;
+}
+
+.footer_col5 {
+    padding: 10px;
+    padding-bottom: 20px;
+    background: rgb(32, 30, 30);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer_col5 span {
+    color: #fff;
+    font-size: 12px;
+    color: gray;
+}
+
+.footer_col6 {
+    padding: 10px;
+    padding-bottom: 40px;
+    background: rgb(32, 30, 30);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    color: gray;
 }
