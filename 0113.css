@@ -10,6 +10,9 @@ a {
     list-style: none;
 }
 
+body,header,nav,div,ul,li{margin:0;padding:0}
+ul,li{list-style:none}
+a{text-decoration:none}
 
 /* ----------- header ---------- */
 header {
@@ -75,6 +78,18 @@ header {
     font-size: 15px;
     display: flex;
     align-items: center;
+    list-style: none;
+}
+
+.info_con .menu > li > ul > li {
+    font-size: 14px;
+    list-style: none;
+}
+
+.info_con .menu > li > ul > li:first-child {
+    font-weight: bold;
+    font-size: 16pz;
+    margin-bottom: 10px;
 }
 
 .info_con .menu a,
@@ -207,16 +222,17 @@ main {
 
 .section2_reward {
     width: 100%;
-    height: 180px;
+    height: 250px;
     background: #1e3932;
     display: flex;
     color: #fff;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 
 .section2_reward .reward_img img {
-    width: 140px;
+    width: 170px;
 }
 
 .section2_reward .reward_text_con .reward_text1 {
